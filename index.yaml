@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-08-25T09:09:18.342057+03:00"
+    created: "2019-08-25T09:49:00.05049+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: 0c6824748342086220a3f55819fb2ce80247075375d59239d3e13011da1929c4
@@ -30,10 +30,10 @@ entries:
     version: 2.5.11
   postgres-operator:
   - apiVersion: v1
-    appVersion: 3.5.0
-    created: "2019-08-25T09:09:18.345664+03:00"
+    appVersion: 3.5.2
+    created: "2019-08-25T09:49:00.05381+03:00"
     description: CrunchyData Postgres Operator Helm chart
-    digest: 7dcfcf6ff727c54a41ed297a978beeb47ba910ee96a3bf30746ec183e9d0fcf3
+    digest: f40573fc7fcf8391c6476eb8e364c46dd8ac667405d6c49f6731bc4bd384fa81
     home: https://www.crunchydata.com/
     icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
     keywords:
@@ -51,12 +51,12 @@ entries:
     - https://github.com/CrunchyData/postgres-operator
     - https://github.com/CrunchyData/crunchy-containers
     urls:
-    - https://charts.primeapps.io/postgres-operator-0.2.0.tgz
-    version: 0.2.0
+    - https://charts.primeapps.io/postgres-operator-0.3.2.tgz
+    version: 0.3.2
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-08-25T09:09:18.347992+03:00"
+    created: "2019-08-25T09:49:00.055531+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -79,4 +79,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.0.2.tgz
     version: 9.0.2
-generated: "2019-08-25T09:09:18.340104+03:00"
+generated: "2019-08-25T09:49:00.048599+03:00"
