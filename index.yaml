@@ -3,10 +3,10 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-08-25T13:18:59.938652+03:00"
+    created: "2019-08-25T15:23:20.68203+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
-    digest: 53ed38953ee47ece16e69e9ca94ded4c9a03fefd190ee18edc319f20eaec4519
+    digest: d0aab11dc4fb12d48c1c441a2edb721b772ad0c06739a7f375eb67ac4bd91789
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -28,12 +28,12 @@ entries:
     urls:
     - https://charts.primeapps.io/minio-2.5.12.tgz
     version: 2.5.12
-  postgres-operator:
+  postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-08-25T13:18:59.943964+03:00"
+    created: "2019-08-25T15:23:20.684971+03:00"
     description: CrunchyData Postgres Operator Helm chart
-    digest: f40573fc7fcf8391c6476eb8e364c46dd8ac667405d6c49f6731bc4bd384fa81
+    digest: 29d639b4dd6357ed5ea9aba432ef07f21dde1d8bfe906be31453af2566a612f2
     home: https://www.crunchydata.com/
     icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
     keywords:
@@ -46,17 +46,17 @@ entries:
     maintainers:
     - email: info@crunchydata.com
       url: https://www.crunchydata.com/
-    name: postgres-operator
+    name: postgresoperator
     sources:
     - https://github.com/CrunchyData/postgres-operator
     - https://github.com/CrunchyData/crunchy-containers
     urls:
-    - https://charts.primeapps.io/postgres-operator-0.3.2.tgz
+    - https://charts.primeapps.io/postgresoperator-0.3.2.tgz
     version: 0.3.2
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-08-25T13:18:59.946481+03:00"
+    created: "2019-08-25T15:23:20.686755+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -79,4 +79,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-08-25T13:18:59.935821+03:00"
+generated: "2019-08-25T15:23:20.680032+03:00"
