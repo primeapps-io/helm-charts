@@ -3,10 +3,10 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-08-25T15:23:20.68203+03:00"
+    created: "2019-08-25T18:35:42.495045+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
-    digest: d0aab11dc4fb12d48c1c441a2edb721b772ad0c06739a7f375eb67ac4bd91789
+    digest: 159a963a64a012c2a93d348c232a5555fac3e57899707b0fec8670fb9190e186
     home: https://min.io
     icon: https://min.io/resources/img/logo/MINIO_wordmark.png
     keywords:
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-08-25T15:23:20.684971+03:00"
+    created: "2019-08-25T18:35:42.498194+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 29d639b4dd6357ed5ea9aba432ef07f21dde1d8bfe906be31453af2566a612f2
     home: https://www.crunchydata.com/
@@ -53,10 +53,29 @@ entries:
     urls:
     - https://charts.primeapps.io/postgresoperator-0.3.2.tgz
     version: 0.3.2
+  primeapps:
+  - apiVersion: v1
+    appVersion: 1.19.232.1
+    created: "2019-08-25T18:35:42.503491+03:00"
+    description: PrimeApps Runtime Helm chart
+    digest: 6f209fafc870bef636845e8c403a26b5a8e2a4298e11263af12de0b490e3ba45
+    home: https://www.primeappps.io/
+    keywords:
+    - low-code
+    - apaas
+    maintainers:
+    - email: info@primeappps.io
+      url: https://www.primeappps.io/
+    name: primeapps
+    sources:
+    - https://github.com/primeapps-io/pre
+    urls:
+    - https://charts.primeapps.io/primeapps-1.0.0.tgz
+    version: 1.0.0
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-08-25T15:23:20.686755+03:00"
+    created: "2019-08-25T18:35:42.505581+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -79,4 +98,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-08-25T15:23:20.680032+03:00"
+generated: "2019-08-25T18:35:42.493057+03:00"
