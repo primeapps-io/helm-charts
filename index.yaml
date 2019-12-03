@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-10-04T18:09:09.142825+03:00"
+    created: "2019-12-03T10:38:43.53836+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: 159a963a64a012c2a93d348c232a5555fac3e57899707b0fec8670fb9190e186
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-10-04T18:09:09.14494+03:00"
+    created: "2019-12-03T10:38:43.539912+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 9bc33eb9ba347bba6d7e4c17c65b560ec53e17d1dd7272b026d033e49d662a1d
     home: https://www.crunchydata.com/
@@ -55,10 +55,55 @@ entries:
     version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.277.1
-    created: "2019-10-04T18:09:09.154635+03:00"
+    appVersion: 1.19.337.1
+    created: "2019-12-03T10:38:43.560749+03:00"
+    dependencies:
+    - condition: postgresoperator.install
+      name: postgresoperator
+      repository: https://charts.primeapps.io/
+      version: 0.3.2
+    - condition: redis.install
+      name: redis
+      repository: https://charts.primeapps.io/
+      version: 9.1.2
+    - condition: minio.install
+      name: minio
+      repository: https://charts.primeapps.io/
+      version: 2.5.12
     description: PrimeApps Runtime Helm chart
-    digest: 2ccd5525c09b3cc34457c2c943416e7931b79ffa2ca68c13b0744f0d23ae9686
+    digest: 084635cd6b8b178176133d40024940a66a40dc3f4c7849e35ebe326ffe654b6a
+    home: https://www.primeappps.io/
+    icon: https://auth.primeapps.io/images/logo.png
+    keywords:
+    - low-code
+    - apaas
+    maintainers:
+    - email: info@primeappps.io
+      url: https://www.primeappps.io/
+    name: primeapps
+    sources:
+    - https://github.com/primeapps-io/pre
+    urls:
+    - https://charts.primeapps.io/primeapps-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v1
+    appVersion: 1.19.277.1
+    created: "2019-12-03T10:38:43.553418+03:00"
+    dependencies:
+    - condition: postgresoperator.install
+      name: postgresoperator
+      repository: https://charts.primeapps.io/
+      version: 0.3.2
+    - condition: redis.install
+      name: redis
+      repository: https://charts.primeapps.io/
+      version: 9.1.2
+    - condition: minio.install
+      name: minio
+      repository: https://charts.primeapps.io/
+      version: 2.5.12
+    description: PrimeApps Runtime Helm chart
+    digest: e2ba828a50c61e3b2614436288c6ba0f9ba1a462a3b786b4f6fb0a7beba1042f
     home: https://www.primeappps.io/
     icon: https://auth.primeapps.io/images/logo.png
     keywords:
@@ -75,7 +120,20 @@ entries:
     version: 1.0.1
   - apiVersion: v1
     appVersion: 1.19.277.1
-    created: "2019-10-04T18:09:09.149412+03:00"
+    created: "2019-12-03T10:38:43.547028+03:00"
+    dependencies:
+    - condition: postgresoperator.install
+      name: postgresoperator
+      repository: https://charts.primeapps.io/
+      version: 0.3.2
+    - condition: redis.install
+      name: redis
+      repository: https://charts.primeapps.io/
+      version: 9.1.2
+    - condition: minio.install
+      name: minio
+      repository: https://charts.primeapps.io/
+      version: 2.5.12
     description: PrimeApps Runtime Helm chart
     digest: 1de3259a7ede725125747070ed9fe1097958186d27354a2b4a68f411001a795e
     home: https://www.primeappps.io/
@@ -95,12 +153,11 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-10-04T18:09:09.155936+03:00"
+    created: "2019-12-03T10:38:43.562947+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
     digest: a8df4689ed6c08ebac9ca65d695f885b2ad1907838df32ad355411ba31402f1e
-    engine: gotpl
     home: http://redis.io/
     icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
     keywords:
@@ -118,4 +175,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-10-04T18:09:09.141559+03:00"
+generated: "2019-12-03T10:38:43.536282+03:00"
