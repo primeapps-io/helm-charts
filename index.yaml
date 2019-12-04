@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-12-04T11:50:37.630085+03:00"
+    created: "2019-12-04T11:53:55.516587+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: 159a963a64a012c2a93d348c232a5555fac3e57899707b0fec8670fb9190e186
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-12-04T11:50:37.632958+03:00"
+    created: "2019-12-04T11:53:55.518303+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 9bc33eb9ba347bba6d7e4c17c65b560ec53e17d1dd7272b026d033e49d662a1d
     home: https://www.crunchydata.com/
@@ -55,40 +55,8 @@ entries:
     version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.338.3
-    created: "2019-12-04T11:50:37.651625+03:00"
-    dependencies:
-    - condition: postgresoperator.install
-      name: postgresoperator
-      repository: https://charts.primeapps.io/
-      version: 0.3.2
-    - condition: redis.install
-      name: redis
-      repository: https://charts.primeapps.io/
-      version: 9.1.2
-    - condition: minio.install
-      name: minio
-      repository: https://charts.primeapps.io/
-      version: 2.5.12
-    description: PrimeApps Runtime Helm Chart
-    digest: ca927798b34a5afa919846bef8e546c24000a7f9cd67ef6b9c697b8ccf3236af
-    home: https://www.primeappps.io/
-    icon: https://auth.primeapps.io/images/logo.png
-    keywords:
-    - low-code
-    - apaas
-    maintainers:
-    - email: info@primeappps.io
-      url: https://www.primeappps.io/
-    name: primeapps
-    sources:
-    - https://github.com/primeapps-io/pre
-    urls:
-    - https://charts.primeapps.io/primeapps-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v1
     appVersion: 1.19.338.2
-    created: "2019-12-04T11:50:37.643794+03:00"
+    created: "2019-12-04T11:53:55.525941+03:00"
     dependencies:
     - condition: postgresoperator.install
       name: postgresoperator
@@ -121,7 +89,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-12-04T11:50:37.655272+03:00"
+    created: "2019-12-04T11:53:55.527955+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -143,4 +111,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-12-04T11:50:37.624815+03:00"
+generated: "2019-12-04T11:53:55.514251+03:00"
