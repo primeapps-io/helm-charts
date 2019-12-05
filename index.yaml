@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-12-05T09:55:41.029915+03:00"
+    created: "2019-12-05T12:05:19.048183+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-12-05T09:55:41.031491+03:00"
+    created: "2019-12-05T12:05:19.051309+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
     home: https://www.crunchydata.com/
@@ -55,8 +55,8 @@ entries:
     version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.338.2
-    created: "2019-12-05T09:55:41.04008+03:00"
+    appVersion: 1.19.339.2
+    created: "2019-12-05T12:05:19.060503+03:00"
     dependencies:
     - condition: postgresoperator.install
       name: postgresoperator
@@ -71,7 +71,7 @@ entries:
       repository: https://charts.primeapps.io/
       version: 2.5.12
     description: PrimeApps Runtime Helm Chart
-    digest: 217a7a49de6c313ba6139138df191757265a6d3b788a3f383602411a08811c03
+    digest: 2fb2575969162f5acc0e61a25f9ed005774caced4572ee84dd154596cfbc5d17
     home: https://www.primeappps.io/
     icon: https://auth.primeapps.io/images/logo.png
     keywords:
@@ -89,7 +89,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-12-05T09:55:41.043534+03:00"
+    created: "2019-12-05T12:05:19.063073+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -111,4 +111,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-12-05T09:55:41.026358+03:00"
+generated: "2019-12-05T12:05:19.044335+03:00"
