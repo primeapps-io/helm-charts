@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-12-06T09:43:10.698865+03:00"
+    created: "2019-12-06T09:50:06.904119+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-12-06T09:43:10.701047+03:00"
+    created: "2019-12-06T09:50:06.90581+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
     home: https://www.crunchydata.com/
@@ -55,8 +55,8 @@ entries:
     version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.339.3
-    created: "2019-12-06T09:43:10.715472+03:00"
+    appVersion: 1.19.340.1
+    created: "2019-12-06T09:50:06.913339+03:00"
     dependencies:
     - condition: postgresoperator.install
       name: postgresoperator
@@ -71,39 +71,7 @@ entries:
       repository: https://charts.primeapps.io/
       version: 2.5.12
     description: PrimeApps Runtime Helm Chart
-    digest: 76ccdb294ac064468e6bd035930d8f5d05c75705f214692496a6c832c6937d1a
-    home: https://www.primeappps.io/
-    icon: https://auth.primeapps.io/images/logo.png
-    keywords:
-    - low-code
-    - apaas
-    maintainers:
-    - email: info@primeappps.io
-      url: https://www.primeappps.io/
-    name: primeapps
-    sources:
-    - https://github.com/primeapps-io/pre
-    urls:
-    - https://charts.primeapps.io/primeapps-1.0.1.tgz
-    version: 1.0.1
-  - apiVersion: v1
-    appVersion: 1.19.339.2
-    created: "2019-12-06T09:43:10.708703+03:00"
-    dependencies:
-    - condition: postgresoperator.install
-      name: postgresoperator
-      repository: https://charts.primeapps.io/
-      version: 0.3.2
-    - condition: redis.install
-      name: redis
-      repository: https://charts.primeapps.io/
-      version: 9.1.2
-    - condition: minio.install
-      name: minio
-      repository: https://charts.primeapps.io/
-      version: 2.5.12
-    description: PrimeApps Runtime Helm Chart
-    digest: 9ea095fa747e103d9bbd07bc66eb92f336a76530b980f34304d22028a450ff74
+    digest: e54bc825bc84a90831d12f97b3d99302c6a5987162e76b2c1275e886d2a0bce4
     home: https://www.primeappps.io/
     icon: https://auth.primeapps.io/images/logo.png
     keywords:
@@ -121,7 +89,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-12-06T09:43:10.719005+03:00"
+    created: "2019-12-06T09:50:06.915562+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -143,4 +111,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-12-06T09:43:10.695981+03:00"
+generated: "2019-12-06T09:50:06.902029+03:00"
