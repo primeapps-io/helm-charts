@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2019-12-07T12:19:42.165442+03:00"
+    created: "2019-12-10T14:16:54.708148+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2019-12-07T12:19:42.168029+03:00"
+    created: "2019-12-10T14:16:54.710416+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
     home: https://www.crunchydata.com/
@@ -55,8 +55,8 @@ entries:
     version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.340.1
-    created: "2019-12-07T12:19:42.176797+03:00"
+    appVersion: 1.19.344.1
+    created: "2019-12-10T14:16:54.719211+03:00"
     dependencies:
     - condition: postgresoperator.install
       name: postgresoperator
@@ -71,7 +71,7 @@ entries:
       repository: https://charts.primeapps.io/
       version: 2.5.12
     description: PrimeApps Runtime Helm Chart
-    digest: e191a9a69e79c02d8755dcafff177c00483e4179cb1ec88d6f9331b184f3b0ad
+    digest: 5154b1bf1adc528c050296ba04f3d719350b263983b9bf2d737e4e4d8965091d
     home: https://www.primeappps.io/
     icon: https://auth.primeapps.io/images/logo.png
     keywords:
@@ -89,7 +89,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2019-12-07T12:19:42.179704+03:00"
+    created: "2019-12-10T14:16:54.723006+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -111,4 +111,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2019-12-07T12:19:42.160898+03:00"
+generated: "2019-12-10T14:16:54.705152+03:00"
