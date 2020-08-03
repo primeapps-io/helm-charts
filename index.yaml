@@ -3,7 +3,7 @@ entries:
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2020-08-03T21:54:03.520055+03:00"
+    created: "2020-08-03T22:31:10.007685+03:00"
     description: MinIO is a high performance distributed object storage server, designed
       for large-scale private cloud infrastructure.
     digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
@@ -31,7 +31,7 @@ entries:
   postgresoperator:
   - apiVersion: v1
     appVersion: 3.5.2
-    created: "2020-08-03T21:54:03.522549+03:00"
+    created: "2020-08-03T22:31:10.010378+03:00"
     description: CrunchyData Postgres Operator Helm chart
     digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
     home: https://www.crunchydata.com/
@@ -56,7 +56,7 @@ entries:
   primeapps:
   - apiVersion: v1
     appVersion: 1.19.354.1
-    created: "2020-08-03T21:54:03.529923+03:00"
+    created: "2020-08-03T22:31:10.016793+03:00"
     dependencies:
     - condition: postgresoperator.install
       name: postgresoperator
@@ -89,7 +89,7 @@ entries:
   primeapps-bi:
   - apiVersion: v1
     appVersion: 1.20.216.1
-    created: "2020-08-03T21:54:03.538756+03:00"
+    created: "2020-08-03T22:31:10.023995+03:00"
     dependencies:
     - condition: redis.enabled
       name: redis
@@ -100,7 +100,7 @@ entries:
       repository: https://kubernetes-charts.storage.googleapis.com
       version: ^8.3.4
     description: PrimeApps BI Helm Chart
-    digest: 27eb70dac3c017295b87f0b7243826c67efeb19882056f8b9ddba8fed9d23aa4
+    digest: d9ebf7ba496a057cf8171d5a56a767a69c42191c1c230e7cd6eb1a312887fccc
     home: https://www.primeappps.io/
     icon: https://auth.primeapps.io/images/logo.png
     keywords:
@@ -118,7 +118,7 @@ entries:
   redis:
   - apiVersion: v1
     appVersion: 5.0.5
-    created: "2020-08-03T21:54:03.541778+03:00"
+    created: "2020-08-03T22:31:10.026066+03:00"
     description: Open source, advanced key-value store. It is often referred to as
       a data structure server since keys can contain strings, hashes, lists, sets
       and sorted sets.
@@ -140,4 +140,4 @@ entries:
     urls:
     - https://charts.primeapps.io/redis-9.1.2.tgz
     version: 9.1.2
-generated: "2020-08-03T21:54:03.518663+03:00"
+generated: "2020-08-03T22:31:10.006241+03:00"
