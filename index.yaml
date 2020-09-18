@@ -1,79 +1,26 @@
 apiVersion: v1
 entries:
-  minio:
-  - apiVersion: v1
-    appVersion: RELEASE.2019-08-07T01-59-21Z
-    created: "2020-08-07T17:35:38.408896+03:00"
-    description: MinIO is a high performance distributed object storage server, designed
-      for large-scale private cloud infrastructure.
-    digest: a0d152ea6f1181b461400f5a2259f876c3659ca0d13d8b95addd8573e45b231b
-    home: https://min.io
-    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
-    keywords:
-    - storage
-    - object-storage
-    - S3
-    maintainers:
-    - email: hello@acale.ph
-      name: Acaleph
-    - email: dev@minio.io
-      name: Minio
-    - email: nitish@min.io
-      name: nitisht
-    - email: sid@min.io
-      name: wlan0
-    name: minio
-    sources:
-    - https://github.com/minio/minio
-    urls:
-    - https://charts.primeapps.io/minio-2.5.12.tgz
-    version: 2.5.12
-  postgresoperator:
-  - apiVersion: v1
-    appVersion: 3.5.2
-    created: "2020-08-07T17:35:38.412439+03:00"
-    description: CrunchyData Postgres Operator Helm chart
-    digest: 498d086dbcad3b9c6814f80640b91bba1bed829c38fe1e503245f68781dacbc9
-    home: https://www.crunchydata.com/
-    icon: http://trusted-charts-logos.stackpoint.io/crunchy_logo.png
-    keywords:
-    - postgres
-    - postgresql
-    - database
-    - sql
-    - operator
-    - crunchydata
-    maintainers:
-    - email: info@crunchydata.com
-      url: https://www.crunchydata.com/
-    name: postgresoperator
-    sources:
-    - https://github.com/CrunchyData/postgres-operator
-    - https://github.com/CrunchyData/crunchy-containers
-    urls:
-    - https://charts.primeapps.io/postgresoperator-0.3.2.tgz
-    version: 0.3.2
   primeapps:
   - apiVersion: v1
-    appVersion: 1.19.354.1
-    created: "2020-08-07T17:35:38.420328+03:00"
+    appVersion: 1.20.258.1
+    created: "2020-09-18T14:05:52.335461+03:00"
     dependencies:
-    - condition: postgresoperator.install
-      name: postgresoperator
-      repository: https://charts.primeapps.io/
-      version: 0.3.2
+    - condition: postgresql.install
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.4.1
     - condition: redis.install
       name: redis
-      repository: https://charts.primeapps.io/
-      version: 9.1.2
+      repository: https://charts.bitnami.com/bitnami
+      version: 10.9.0
     - condition: minio.install
       name: minio
-      repository: https://charts.primeapps.io/
-      version: 2.5.12
+      repository: https://charts.bitnami.com/bitnami
+      version: 3.7.6
     description: PrimeApps Runtime Helm Chart
-    digest: d60277ef98e2deea8f3a517e5a18452a3364724bb43825f7ff481edb991d83dc
+    digest: 1742c51c8f4052e96cb691b75b732137b305314a79d04cd732903233cc19e6e6
     home: https://www.primeappps.io/
-    icon: https://auth.primeapps.io/images/logo.png
+    icon: http://file.primeapps.io/assets/primeapps/logo.png
     keywords:
     - low-code
     - apaas
@@ -82,62 +29,9 @@ entries:
       url: https://www.primeappps.io/
     name: primeapps
     sources:
-    - https://github.com/primeapps-io/pre
+    - https://github.com/primeapps-io/helm-charts
+    - https://github.com/primeapps-io/runtime
     urls:
-    - https://charts.primeapps.io/primeapps-1.0.0.tgz
-    version: 1.0.0
-  primeapps-bi:
-  - apiVersion: v1
-    appVersion: 1.20.216.1
-    created: "2020-08-07T17:35:38.428663+03:00"
-    dependencies:
-    - condition: redis.enabled
-      name: redis
-      repository: https://kubernetes-charts.storage.googleapis.com
-      version: ^10.5.3
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://kubernetes-charts.storage.googleapis.com
-      version: ^8.3.4
-    description: PrimeApps BI Helm Chart
-    digest: b083ac59ea5e4fc87f49f0cc9af90b1e65fd4b3e1faed0572ca465cb4422bb8d
-    home: https://www.primeappps.io/
-    icon: https://auth.primeapps.io/images/logo.png
-    keywords:
-    - low-code
-    - apaas
-    maintainers:
-    - email: info@primeappps.io
-      url: https://www.primeappps.io/
-    name: primeapps-bi
-    sources:
-    - https://github.com/primeapps-io/
-    urls:
-    - https://charts.primeapps.io/primeapps-bi-1.0.0.tgz
-    version: 1.0.0
-  redis:
-  - apiVersion: v1
-    appVersion: 5.0.5
-    created: "2020-08-07T17:35:38.431185+03:00"
-    description: Open source, advanced key-value store. It is often referred to as
-      a data structure server since keys can contain strings, hashes, lists, sets
-      and sorted sets.
-    digest: a8df4689ed6c08ebac9ca65d695f885b2ad1907838df32ad355411ba31402f1e
-    home: http://redis.io/
-    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
-    keywords:
-    - redis
-    - keyvalue
-    - database
-    maintainers:
-    - email: containers@bitnami.com
-      name: Bitnami
-    - email: cedric@desaintmartin.fr
-      name: desaintmartin
-    name: redis
-    sources:
-    - https://github.com/bitnami/bitnami-docker-redis
-    urls:
-    - https://charts.primeapps.io/redis-9.1.2.tgz
-    version: 9.1.2
-generated: "2020-08-07T17:35:38.407111+03:00"
+    - https://charts.primeapps.io/primeapps-0.0.1.tgz
+    version: 0.0.1
+generated: "2020-09-18T14:05:52.325249+03:00"
