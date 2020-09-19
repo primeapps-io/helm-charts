@@ -3,7 +3,7 @@ entries:
   primeapps:
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.790515+03:00"
+    created: "2020-09-19T20:03:53.881686+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -18,7 +18,7 @@ entries:
       repository: https://charts.bitnami.com/bitnami
       version: 3.7.6
     description: PrimeApps Runtime Helm Chart
-    digest: 17aa895b3a6de0ee0a2328021a1d43ac3b55d5ee6105e2302811d1dc85359a0d
+    digest: 7cabdb47982e968dd5b9874b621a97e8779709515f1e631f3ab237532bd9f1f3
     home: https://www.primeappps.io/
     icon: http://file.primeapps.io/assets/primeapps/logo.png
     keywords:
@@ -32,11 +32,11 @@ entries:
     - https://github.com/primeapps-io/helm-charts
     - https://github.com/primeapps-io/runtime
     urls:
-    - https://charts.primeapps.io/primeapps-0.0.10.tgz
-    version: 0.0.10
+    - https://charts.primeapps.io/primeapps-0.1.9.tgz
+    version: 0.1.9
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.862594+03:00"
+    created: "2020-09-19T20:03:53.872109+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -69,7 +69,7 @@ entries:
     version: 0.0.9
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.852735+03:00"
+    created: "2020-09-19T20:03:53.862833+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -102,7 +102,7 @@ entries:
     version: 0.0.8
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.84234+03:00"
+    created: "2020-09-19T20:03:53.853256+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -135,7 +135,7 @@ entries:
     version: 0.0.6
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.831649+03:00"
+    created: "2020-09-19T20:03:53.845184+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -168,7 +168,7 @@ entries:
     version: 0.0.5
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.821+03:00"
+    created: "2020-09-19T20:03:53.835871+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -201,7 +201,7 @@ entries:
     version: 0.0.4
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.811136+03:00"
+    created: "2020-09-19T20:03:53.826742+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -234,7 +234,7 @@ entries:
     version: 0.0.3
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.801648+03:00"
+    created: "2020-09-19T20:03:53.816954+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -267,7 +267,7 @@ entries:
     version: 0.0.2
   - apiVersion: v1
     appVersion: 1.20.258.1
-    created: "2020-09-19T19:56:16.780745+03:00"
+    created: "2020-09-19T20:03:53.807003+03:00"
     dependencies:
     - condition: postgresql.install
       name: postgresql
@@ -298,4 +298,4 @@ entries:
     urls:
     - https://charts.primeapps.io/primeapps-0.0.1.tgz
     version: 0.0.1
-generated: "2020-09-19T19:56:16.769447+03:00"
+generated: "2020-09-19T20:03:53.797193+03:00"
